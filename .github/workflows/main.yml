@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Move files
-      run: mv * /root/api_path  # Move all files and folders to /root/api_path
+      run: mv * /~/api_path  # Move all files and folders to /root/api_path
 
     - name: Install dependencies
       run: yarn install
