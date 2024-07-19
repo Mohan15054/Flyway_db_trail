@@ -1,0 +1,23 @@
+name: Deploy Node.js Server
+
+on:
+  push:
+    branches:
+      - main  # Replace with your main branch name
+  pull_request:
+    branches:
+      - main  # Replace with your main branch name
+
+jobs:
+  deploy:
+    runs-on: self-hosted  # Ensure your self-hosted runner is properly configured
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+     - name: Move files
+      run: mv *  /root/api_path # Move contents of source folder to destination
+
+    - name: Install dependencies
+      run: yarn install
