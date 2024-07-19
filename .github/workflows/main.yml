@@ -16,8 +16,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-     - name: Move files
-      run: mv *  /root/api_path # Move contents of source folder to destination
+    - name: Move files
+      run: mv * /root/api_path  # Move all files and folders to /root/api_path
 
     - name: Install dependencies
       run: yarn install
+
+    # Add more steps for building, testing, starting server, etc.
