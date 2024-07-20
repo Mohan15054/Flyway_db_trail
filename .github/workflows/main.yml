@@ -25,5 +25,8 @@ jobs:
     - name: Deploy DB
       run: cd ~/api_path && yarn run migrate
     
+    # - name: restart-service
+    #   run: systemctl restart api.service
+    
 
     # Add more steps for building, testing, starting server, etc.
