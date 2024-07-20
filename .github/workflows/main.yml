@@ -20,7 +20,7 @@ jobs:
       run: cp -r * ~/api_path  # Move all files and folders to /root/api_path
 
     - name: Install dependencies
-      run: cd /~/api_path && yarn install
+      run: cd ~/api_path && yarn install
 
     - name: Deploy DB
       run: yarn run migrate
