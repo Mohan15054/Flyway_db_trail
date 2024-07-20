@@ -22,4 +22,8 @@ jobs:
     - name: Install dependencies
       run: cd /~/api_path && yarn install
 
+    - name: Deploy DB
+      run: yarn run migrate
+    
+
     # Add more steps for building, testing, starting server, etc.
