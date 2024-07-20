@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "migrate" : "flyway -c flyway.js migrate"
+    "migrate": "flyway -c flyway.js migrate"
   },
   "repository": {
     "type": "git",
@@ -22,6 +22,7 @@
     "connection-string": "^4.4.0",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "node-flywaydb": "^3.0.5"
+    "node-flywaydb": "^3.0.5",
+    "path": "^0.12.7"
   }
 }
